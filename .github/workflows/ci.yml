@@ -8,5 +8,3 @@ jobs:
       uses: mtrezza/github-issue-bot@main
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "@${issue.user.login} this issue was automatically closed because it did not follow the issue template."
-        issue-pattern: ".*checkbox.*"
