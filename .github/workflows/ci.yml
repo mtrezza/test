@@ -1,11 +1,11 @@
-name: Autocloser
+name: Issue Bot
 on: [issues, pull_request]
 jobs:
-  autoclose:
+  issue-bot:
     runs-on: ubuntu-latest
     steps:
     - name: Autoclose issues that did not follow issue template
-      uses: mtrezza/github-issue-bot@0.0.1
+      uses: mtrezza/github-issue-bot@main
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         pr-message: "@${issue.user.login} this issue was automatically closed because it did not follow the issue template."
