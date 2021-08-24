@@ -4,7 +4,7 @@ jobs:
   issue-bot:
     runs-on: ubuntu-latest
     steps:
-    - name: Autoclose issues that did not follow issue template
+    - name: Inspect Issue
       uses: mtrezza/github-issue-bot@main
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
