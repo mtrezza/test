@@ -7,6 +7,6 @@ jobs:
     - name: Autoclose issues that did not follow issue template
       uses: mtrezza/github-issue-bot@main
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         pr-message: "@${issue.user.login} this issue was automatically closed because it did not follow the issue template."
         pr-pattern: ".*checkbox.*"
