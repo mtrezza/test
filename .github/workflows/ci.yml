@@ -1,12 +1,19 @@
-name: Autocloser
+name: Example workflow
 on: [issues, pull_request]
 jobs:
-  autoclose:
+  example:
+    name: Example job
     runs-on: ubuntu-latest
     steps:
-    - name: Autoclose issues that did not follow issue template
-      uses: roots/issue-closer@v1.1
+    - name: Run actions/checkout 
+      uses: actions/checkout@v1
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-close-message: "@${issue.user.login} this issue was automatically closed because it did not follow the issue template"
-        issue-pattern: ".*checkbox.*"
+        fetch-depth: 1
+    - name: Run fabiankoestring/body-regex-validator-action
+      uses: fabiankoestring/body-regex-validator-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PULL_REQUEST_PATTERN: '^(.*Description.*Changes.*Tests.*)$'
+        PULL_REQUEST_COMMENT: 'This is my pr comment template.'
+        ISSUE_PATTERN: '^(.*Description.*Behavior.*)$'
+        ISSUE_COMMENT: 'This is my issue comment template.'
