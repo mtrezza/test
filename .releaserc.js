@@ -1,8 +1,18 @@
+'use strict';
+/**
+ * Semantic Release Config
+ */
+
 // Get env vars
 const ref = process.env.GITHUB_REF;
 const branch = ref.split('/').pop();
-console.log(`releaserc: ref: ${ref}`);
-console.log(`releaserc: branch: ${branch}`);
+
+console.log(`Configuring semantic release`);
+console.log(`Running on branch name: ${branch}`);
+
+// Declare params
+const changelogFile = `CHANGELOG_${branch}.md`;
+console.log(`Changelog file output to: ${changelogFile}`);
 
 // Declare semantic config
 const config = {
@@ -46,13 +56,13 @@ const config = {
       },
     }],
     ['@semantic-release/changelog', {
-      'changelogFile': `CHANGELOG_${branch}.md`,
+      'changelogFile': changelogFile,
     }],
     ['@semantic-release/npm', {
       'npmPublish': false,
     }],
     ['@semantic-release/git', {
-      assets: ['CHANGELOG.md', 'package.json', 'package-lock.json', 'npm-shrinkwrap.json'],
+      assets: [changelogFile, 'package.json', 'package-lock.json', 'npm-shrinkwrap.json'],
       message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
     }],
   ],
