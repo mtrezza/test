@@ -7,7 +7,7 @@ module.exports = {
     // Long-Term-Support branches, e.g. 'lts-4.x.x'
     'lts-[0-9]+\.x\.x'
   ],
-  'dryRun': true,
+  'dryRun': false,
   'debug': true,
   'ci': false,
   'plugins': [
