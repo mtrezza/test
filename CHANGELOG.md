@@ -1,3 +1,10 @@
+# [1.1.0-alpha.2](https://github.com/mtrezza/test/compare/v1.1.0-alpha.1...v1.1.0-alpha.2) (2021-08-25)
+
+
+### Features
+
+* 0123 ([47a5799](https://github.com/mtrezza/test/commit/47a57995e087614750677c58fe0e3a7bdfdbd8b1))
+
 # [1.1.0-alpha.1](https://github.com/mtrezza/test/compare/v1.0.0...v1.1.0-alpha.1) (2021-08-25)
 
 
