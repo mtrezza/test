@@ -1,3 +1,10 @@
+# [2.0.0-alpha.6](https://github.com/mtrezza/test/compare/2.0.0-alpha.5...2.0.0-alpha.6) (2021-08-25)
+
+
+### Features
+
+* **router:** new router feature ([27dfac9](https://github.com/mtrezza/test/commit/27dfac917f61df1f3f89f50b47ea5ff3b03279fc)), closes [#1700](https://github.com/mtrezza/test/issues/1700)
+
 # [2.0.0-alpha.5](https://github.com/mtrezza/test/compare/v2.0.0-alpha.4...2.0.0-alpha.5) (2021-08-25)
 
 
