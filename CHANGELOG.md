@@ -1,3 +1,10 @@
+# [2.0.0-alpha.5](https://github.com/mtrezza/test/compare/v2.0.0-alpha.4...2.0.0-alpha.5) (2021-08-25)
+
+
+### Bug Fixes
+
+* change release tag ([70ca0a0](https://github.com/mtrezza/test/commit/70ca0a0eaa6f79b216e9aa4a796defce48288f6c))
+
 # [2.0.0-alpha.4](https://github.com/mtrezza/test/compare/v2.0.0-alpha.3...v2.0.0-alpha.4) (2021-08-25)
 
 
