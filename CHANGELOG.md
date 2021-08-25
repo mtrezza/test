@@ -1,3 +1,25 @@
+# [2.0.0-beta.1](https://github.com/mtrezza/test/compare/v1.1.0-beta.1...v2.0.0-beta.1) (2021-08-25)
+
+
+### Bug Fixes
+
+* 012345 ([0330780](https://github.com/mtrezza/test/commit/0330780770f58f0c4ba9fee76cb2d128bd7c24ed))
+* 0123456 ([6979bc1](https://github.com/mtrezza/test/commit/6979bc1d297a8722580ee81b34aca650aeee90ad))
+* 01234567 ([5e1bd55](https://github.com/mtrezza/test/commit/5e1bd555f5051d811eb6801bd8625aedd561a424))
+
+
+### BREAKING CHANGES
+
+* 3rd
+
+This is the 3rd breaking change
+* 2nd
+
+This also breaks something!
+* This breaks something.
+
+That that and this to migrate.
+
 # [1.1.0-beta.1](https://github.com/mtrezza/test/compare/v1.0.0...v1.1.0-beta.1) (2021-08-25)
 
 
