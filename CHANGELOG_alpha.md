@@ -1,3 +1,15 @@
+# [2.0.0-alpha.13](https://github.com/mtrezza/test/compare/2.0.0-alpha.12...2.0.0-alpha.13) (2021-08-25)
+
+
+### Bug Fixes
+
+* security ([d00c26f](https://github.com/mtrezza/test/commit/d00c26f4342da9526d92445cc394e7b21e98c7cd))
+
+
+### Features
+
+* new ([e26f97e](https://github.com/mtrezza/test/commit/e26f97ef80555b7ed9351d4b30f0f12f22325651))
+
 # [2.0.0-alpha.12](https://github.com/mtrezza/test/compare/2.0.0-alpha.11...2.0.0-alpha.12) (2021-08-25)
 
 
