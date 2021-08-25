@@ -30,7 +30,6 @@ async function config() {
 
   // Load template file contents
   await loadTemplates();
-  console.log(`config: template: ${JSON.stringify(templates)}`);
 
   // const gitRawCommitsOpts = {
   //   format: '%B%n-hash-%n%H%n-gitTags-%n%d%n-committerDate-%n%ci%n-authorName-%n%an%n-authorEmail-%n%ae%n-gpgStatus-%n%G?%n-gpgSigner-%n%GS',
