@@ -11,8 +11,18 @@ console.log(`Configuring semantic release`);
 console.log(`Running on branch name: ${branch}`);
 
 // Declare params
+const changelogTemplateFiles = {
+  template: './.releaserc/template.hbs',
+  header: './.releaserc/header.hbs',
+  commit: './.releaserc/commit.hbs',
+  footer: './.releaserc/footer.hbs',
+};
 const changelogFile = `CHANGELOG_${branch}.md`;
 console.log(`Changelog file output to: ${changelogFile}`);
+
+const gitRawCommitsOpts = {
+  format: '%B%n-hash-%n%H%n-gitTags-%n%d%n-committerDate-%n%ci%n-authorName-%n%an%n-authorEmail-%n%ae%n-gpgStatus-%n%G?%n-gpgSigner-%n%GS',
+};
 
 // Declare semantic config
 const config = {
@@ -54,6 +64,7 @@ const config = {
       writerOpts: {
         commitsSort: ['subject', 'scope']
       },
+      mainTemplate: changelogTemplateFiles.template,
     }],
     ['@semantic-release/changelog', {
       'changelogFile': changelogFile,
@@ -63,7 +74,6 @@ const config = {
     }],
     ['@semantic-release/git', {
       assets: [changelogFile, 'package.json', 'package-lock.json', 'npm-shrinkwrap.json'],
-      message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
     }],
   ],
 };
