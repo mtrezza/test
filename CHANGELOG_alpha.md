@@ -1,3 +1,10 @@
+# [2.0.0-alpha.29](https://github.com/mtrezza/test/compare/2.0.0-alpha.28...2.0.0-alpha.29) (2021-08-25)
+
+
+### Bug Fixes
+
+* fixes issue ([a1cae49](https://github.com/mtrezza/test/commit/a1cae49e3fa8a55c5cfa5641c1e009421105d90a))
+
 # [2.0.0-alpha.28](https://github.com/mtrezza/test/compare/2.0.0-alpha.27...2.0.0-alpha.28) (2021-08-25)
 
 
