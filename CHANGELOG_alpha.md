@@ -1,3 +1,10 @@
+## 2.0.0-alpha.24 (2021-08-25)
+
+
+### Features
+
+* feat: d ([7f7067851006f3c8c8bd417c49ad77dd04ae8da9](https://github.com/mtrezza/test/commit/7f7067851006f3c8c8bd417c49ad77dd04ae8da9))
+
 ## 2.0.0-alpha.23 (2021-08-25)
 
 * feat: c ([895b608f4596a207c6a4657a95cb0c1f44b5fe85](https://github.com/mtrezza/test/commit/895b608f4596a207c6a4657a95cb0c1f44b5fe85))
