@@ -2,7 +2,7 @@
 const branch = process.env.GITHUB_REF;
 
 // Declare semantic config
-let config = {
+const config = {
   branches: [
     'main',
     { name: 'alpha', prerelease: true },
@@ -43,7 +43,7 @@ let config = {
       },
     }],
     ['@semantic-release/changelog', {
-      'changelogFile': 'CHANGELOG.md',
+      'changelogFile': `CHANGELOG_${branch}.md`,
     }],
     ['@semantic-release/npm', {
       'npmPublish': false,
@@ -55,5 +55,4 @@ let config = {
   ],
 };
 
-
-export default config;
+module.exports = config;
