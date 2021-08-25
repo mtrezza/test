@@ -71,7 +71,7 @@ async function config() {
         },
         writerOpts: {
           commitsSort: ['subject', 'scope'],
-          // mainTemplate: await readFile(changelogTemplateFiles.template),
+          mainTemplate: template,
         },
       }],
       ['@semantic-release/changelog', {
