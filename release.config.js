@@ -23,10 +23,19 @@ module.exports = {
         { "type": "refactor", "scope": "core-*", "release": "minor" },
         { "type": "refactor", "release": "patch" },
         { "scope": "no-release", "release": false }
-      ]
+      ],
+      "parserOpts": {
+        "noteKeywords": [ "BREAKING CHANGE", "BREAKING CHANGES", "BREAKING" ],
+      }
     }],
     ['@semantic-release/release-notes-generator', {
-
+      "preset": "angular",
+      "parserOpts": {
+        "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+      },
+      "writerOpts": {
+        "commitsSort": ["subject", "scope"]
+      },
     }],
     ['@semantic-release/changelog', {
       'changelogFile': 'CHANGELOG.md',
@@ -35,7 +44,7 @@ module.exports = {
       'npmPublish': false,
     }],
     ['@semantic-release/git', {
-      'assets': ['CHANGELOG.md', 'package.json', 'package-lock.json'],
+      'assets': ['CHANGELOG.md', 'package.json', 'package-lock.json', 'npm-shrinkwrap.json'],
       "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
     }],
   ],
