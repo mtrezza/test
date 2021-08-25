@@ -3,9 +3,9 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: '*'
+    branches: [ main, alpha, beta ]
 jobs:
-  quality:
+  release:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
