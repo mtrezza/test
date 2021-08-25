@@ -1,3 +1,10 @@
+# [2.0.0-alpha.25](https://github.com/mtrezza/test/compare/2.0.0-alpha.24...2.0.0-alpha.25) (2021-08-25)
+
+
+### Features
+
+* d ([1569ea4](https://github.com/mtrezza/test/commit/1569ea4bab264721a1dd3c6b93e925ff9d962ccc))
+
 ## 2.0.0-alpha.24 (2021-08-25)
 
 
