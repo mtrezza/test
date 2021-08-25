@@ -1,3 +1,10 @@
+# [2.0.0-alpha.26](https://github.com/mtrezza/test/compare/2.0.0-alpha.25...2.0.0-alpha.26) (2021-08-25)
+
+
+### Features
+
+* github ([9105253](https://github.com/mtrezza/test/commit/91052536e330c84f612cadb87404c72439a0fdd8))
+
 # [2.0.0-alpha.25](https://github.com/mtrezza/test/compare/2.0.0-alpha.24...2.0.0-alpha.25) (2021-08-25)
 
 
