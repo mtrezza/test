@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mtrezza/test/issues"
   },
-  "homepage": "https://github.com/mtrezza/test#readme"
+  "homepage": "https://github.com/mtrezza/test#readme",
+  "devDependencies": {
+    "semantic-release": "^17.4.6"
+  }
 }
