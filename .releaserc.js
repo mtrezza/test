@@ -88,4 +88,4 @@ async function config() {
 
 
 
-module.exports = await config();
+module.exports = config();
