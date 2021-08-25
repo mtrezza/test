@@ -1,7 +1,8 @@
 // Get env vars
-const branch = process.env.GITHUB_REF || '';
+const ref = process.env.GITHUB_REF;
+const branch = ref.split('/').pop();
+console.log(`releaserc: ref: ${ref}`);
 console.log(`releaserc: branch: ${branch}`);
-console.log(`releaserc: process.env: ${JSON.stringify(process.env)}`);
 
 // Declare semantic config
 const config = {
