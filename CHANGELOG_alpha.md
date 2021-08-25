@@ -1,3 +1,12 @@
+# [2.0.0-alpha.18](https://github.com/mtrezza/test/compare/2.0.0-alpha.17...2.0.0-alpha.18) (2021-08-25)
+
+
+### Features
+
+* c ([e6176ee](https://github.com/mtrezza/test/commit/e6176ee2df5cd020224d0f7b20f2e3214396ecce))
+* d ([86ab35b](https://github.com/mtrezza/test/commit/86ab35bef76f8d1cef3150787d74cd6d3eea71be))
+* test ([0fc0c8d](https://github.com/mtrezza/test/commit/0fc0c8ddd0dbb8a44ebff41dd878a207b4241d72))
+
 # [2.0.0-alpha.16](https://github.com/mtrezza/test/compare/2.0.0-alpha.15...2.0.0-alpha.16) (2021-08-25)
 
 
