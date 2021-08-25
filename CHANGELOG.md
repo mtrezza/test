@@ -1,3 +1,17 @@
+# [2.0.0-alpha.1](https://github.com/mtrezza/test/compare/v1.1.0-alpha.3...v2.0.0-alpha.1) (2021-08-25)
+
+
+### Bug Fixes
+
+* 012345 ([0330780](https://github.com/mtrezza/test/commit/0330780770f58f0c4ba9fee76cb2d128bd7c24ed))
+
+
+### BREAKING CHANGES
+
+* This breaks something.
+
+That that and this to migrate.
+
 # [1.1.0-alpha.3](https://github.com/mtrezza/test/compare/v1.1.0-alpha.2...v1.1.0-alpha.3) (2021-08-25)
 
 
