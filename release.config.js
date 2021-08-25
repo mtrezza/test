@@ -14,7 +14,7 @@ module.exports = {
   ],
   'dryRun': false,
   'debug': true,
-  'ci': false,
+  //'ci': false,
   'plugins': [
     ['@semantic-release/commit-analyzer', {
       "preset": "angular",
