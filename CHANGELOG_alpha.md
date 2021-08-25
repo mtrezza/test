@@ -1,9 +1,6 @@
-<!-- This comment will show up as HTML-comment -->
 # [2.0.0-alpha.22](https://github.com/mtrezza/test/compare/2.0.0-alpha.21...2.0.0-alpha.22) (2021-08-25)
 
 * d ([cc3f7e3](https://github.com/mtrezza/test/commit/cc3f7e34b1e267efd37be187eff776a7c120a460))
-
-<!-- This comment will show up as HTML-comment -->
 # [2.0.0-alpha.21](https://github.com/mtrezza/test/compare/2.0.0-alpha.20...2.0.0-alpha.21) (2021-08-25)
 
 * dfd ([e03992d](https://github.com/mtrezza/test/commit/e03992de773f41b3afbf8ced2364f60ba8c76263))

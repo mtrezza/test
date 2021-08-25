@@ -3,35 +3,39 @@
  */
 
 const fs = require('fs').promises;
+const path = require('path');
 
 // Get env vars
 const ref = process.env.GITHUB_REF;
-const branch = ref.split('/').pop();
-console.log(`Running on branch: ${branch}`);
 
 // Declare params
-const changelogTemplateFiles = {
-  template: './.releaserc/template.hbs',
-  header: './.releaserc/header.hbs',
-  commit: './.releaserc/commit.hbs',
-  footer: './.releaserc/footer.hbs',
+const resourcePath = './.releaserc/';
+const templates = {
+  main: { file: 'template.hbs', text: undefined },
+  header: { file: 'header.hbs', text: undefined },
+  commit: { file: 'commit.hbs', text: undefined },
+  footer: { file: 'footer.hbs', text: undefined },
 };
-const changelogFile = `CHANGELOG_${branch}.md`;
-console.log(`Changelog file output to: ${changelogFile}`);
-
-const gitRawCommitsOpts = {
-  format: '%B%n-hash-%n%H%n-gitTags-%n%d%n-committerDate-%n%ci%n-authorName-%n%an%n-authorEmail-%n%ae%n-gpgStatus-%n%G?%n-gpgSigner-%n%GS',
-};
-
-async function readFile(path) {
-  return await fs.readFile(path, 'utf-8');
-}
 
 // Declare semantic config
 async function config() {
 
-  const template = await readFile(changelogTemplateFiles.template);
-  console.log(`config: template: ${template}`);
+  // Get branch
+  const branch = ref.split('/').pop();
+  console.log(`Running on branch: ${branch}`);
+  
+  // Set changelog file
+  const changelogFile = `CHANGELOG_${branch}.md`;
+  console.log(`Changelog file output to: ${changelogFile}`);
+
+  // Load template file contents
+  loadTemplates();
+  console.log(`config: template: ${JSON.stringify(templates)}`);
+
+  // const gitRawCommitsOpts = {
+  //   format: '%B%n-hash-%n%H%n-gitTags-%n%d%n-committerDate-%n%ci%n-authorName-%n%an%n-authorEmail-%n%ae%n-gpgStatus-%n%G?%n-gpgSigner-%n%GS',
+  // };
+
 
   const config = {
     branches: [
@@ -71,7 +75,10 @@ async function config() {
         },
         writerOpts: {
           commitsSort: ['subject', 'scope'],
-          mainTemplate: template,
+          mainTemplate: templates.main.text,
+          headerPartial: templates.header.text,
+          commitPartial: templates.commit.text,
+          footerPartial: templates.footer.text,
         },
       }],
       ['@semantic-release/changelog', {
@@ -89,6 +96,15 @@ async function config() {
   return config;
 }
 
+async function loadTemplates() {
+  for (const template of Object.keys(templates)) {
+    const text = await readFile(path.resolve(resourcePath, template.file));
+    templates[template].text = text;
+  }
+}
 
+async function readFile(filePath) {
+  return await fs.readFile(filePath, 'utf-8');
+}
 
 module.exports = config();
