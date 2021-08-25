@@ -1,6 +1,6 @@
 module.exports = {
   'branches': ['main', 'alpha', 'beta', 'next-major'],
-  'dryRun': true,
+  'dryRun': false,
   'debug': true,
   'ci': false,
   'plugins': [
