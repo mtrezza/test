@@ -29,7 +29,7 @@ async function config() {
   console.log(`Changelog file output to: ${changelogFile}`);
 
   // Load template file contents
-  loadTemplates();
+  await loadTemplates();
   console.log(`config: template: ${JSON.stringify(templates)}`);
 
   // const gitRawCommitsOpts = {
