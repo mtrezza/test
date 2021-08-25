@@ -62,9 +62,9 @@ const config = {
         noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING']
       },
       writerOpts: {
-        commitsSort: ['subject', 'scope']
+        commitsSort: ['subject', 'scope'],
+        mainTemplate: changelogTemplateFiles.template,
       },
-      mainTemplate: changelogTemplateFiles.template,
     }],
     ['@semantic-release/changelog', {
       'changelogFile': changelogFile,
