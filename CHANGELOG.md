@@ -29,6 +29,18 @@ That that and this to migrate.
 
 # [2.0.0-beta.1](https://github.com/mtrezza/test/compare/v1.1.0-beta.1...v2.0.0-beta.1) (2021-08-25)
 
+### BREAKING CHANGES
+
+* 3rd
+
+This is the 3rd breaking change
+* 2nd
+
+This also breaks something!
+* This breaks something.
+
+That that and this to migrate.
+
 
 ### Bug Fixes
 
