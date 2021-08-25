@@ -90,7 +90,7 @@ async function config() {
         assets: [changelogFile, 'package.json', 'package-lock.json', 'npm-shrinkwrap.json'],
       }],
       ["@semantic-release/github", {
-        successComment: ':tada: This issue has been resolved in version [${nextRelease.version}](<github_release_url>) :tada:',
+        successComment: getReleaseComment(),
       }],
     ],
   };
@@ -108,5 +108,13 @@ async function loadTemplates() {
 async function readFile(filePath) {
   return await fs.readFile(filePath, 'utf-8');
 }
+
+function getReleaseComment() {
+  let comment = '## 🤖 Parsy\n### Thanks for your contribution!';
+  comment += '\n\n- 🎉 This issue has been resolved in version [${nextRelease.version}](<github_release_url>)';
+  comment += '\n\n- ▶️ Test it out and please report back if you discover any bugs!';
+  return comment;
+}
+
 
 module.exports = config();
