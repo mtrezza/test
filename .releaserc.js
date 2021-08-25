@@ -90,6 +90,8 @@ async function config() {
       ['@semantic-release/git', {
         assets: [changelogFile, 'package.json', 'package-lock.json', 'npm-shrinkwrap.json'],
       }],
+      ["@semantic-release/github", {
+      }],
     ],
   };
 
