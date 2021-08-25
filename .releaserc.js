@@ -30,7 +30,7 @@ async function readFile(path) {
 // Declare semantic config
 async function config() {
 
-  const template = readFile(changelogTemplateFiles.template);
+  const template = await readFile(changelogTemplateFiles.template);
   console.log(`config: template: ${template}`);
 
   const config = {
