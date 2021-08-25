@@ -90,6 +90,7 @@ async function config() {
         assets: [changelogFile, 'package.json', 'package-lock.json', 'npm-shrinkwrap.json'],
       }],
       ["@semantic-release/github", {
+        successComment: ':tada: This issue has been resolved in version [${nextRelease.version}](<github_release_url>) :tada:',
       }],
     ],
   };
