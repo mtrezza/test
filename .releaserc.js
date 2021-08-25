@@ -98,7 +98,7 @@ async function config() {
 
 async function loadTemplates() {
   for (const template of Object.keys(templates)) {
-    const text = await readFile(path.resolve(resourcePath, templates[template].file));
+    const text = await readFile(path.resolve(__dirname, resourcePath, templates[template].file));
     templates[template].text = text;
   }
 }
