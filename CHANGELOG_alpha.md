@@ -1,5 +1,3 @@
-./.releaserc/template.hbs
-
 # [2.0.0-alpha.16](https://github.com/mtrezza/test/compare/2.0.0-alpha.15...2.0.0-alpha.16) (2021-08-25)
 
 

@@ -1,14 +1,13 @@
-'use strict';
 /**
  * Semantic Release Config
  */
 
+const fs = require('fs').promises;
+
 // Get env vars
 const ref = process.env.GITHUB_REF;
 const branch = ref.split('/').pop();
-
-console.log(`Configuring semantic release`);
-console.log(`Running on branch name: ${branch}`);
+console.log(`Running on branch: ${branch}`);
 
 // Declare params
 const changelogTemplateFiles = {
@@ -63,7 +62,7 @@ const config = {
       },
       writerOpts: {
         commitsSort: ['subject', 'scope'],
-        mainTemplate: changelogTemplateFiles.template,
+        mainTemplate: await readFile(changelogTemplateFiles.template),
       },
     }],
     ['@semantic-release/changelog', {
@@ -77,5 +76,9 @@ const config = {
     }],
   ],
 };
+
+async function readFile(path) {
+  return await fs.readFile(path, 'utf-8');
+}
 
 module.exports = config;
