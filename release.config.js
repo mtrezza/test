@@ -1,6 +1,13 @@
 module.exports = {
-  'branches': ['main', 'alpha', 'beta', 'next-major'],
-  'dryRun': true,
+  'branches': [
+    'main',
+    {name: 'alpha', prerelease: true},
+    {name: 'beta', prerelease: true},
+    'next-major',
+    // Long-Term-Support branches, e.g. 'lts-4.x.x'
+    'lts-[0-9]+\.x\.x'
+  ],
+  'dryRun': false,
   'debug': true,
   'ci': false,
   'plugins': [
