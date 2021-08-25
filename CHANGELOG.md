@@ -1,3 +1,17 @@
+# [2.0.0-alpha.3](https://github.com/mtrezza/test/compare/v2.0.0-alpha.2...v2.0.0-alpha.3) (2021-08-25)
+
+
+### Bug Fixes
+
+* 01234567 ([5e1bd55](https://github.com/mtrezza/test/commit/5e1bd555f5051d811eb6801bd8625aedd561a424))
+
+
+### BREAKING CHANGES
+
+* 3rd
+
+This is the 3rd breaking change
+
 # [2.0.0-alpha.2](https://github.com/mtrezza/test/compare/v2.0.0-alpha.1...v2.0.0-alpha.2) (2021-08-25)
 
 
