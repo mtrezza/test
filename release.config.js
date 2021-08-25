@@ -9,5 +9,11 @@ module.exports = {
     ["@semantic-release/npm", {
       "npmPublish": false,
     }],
+    ["@semantic-release/changelog", {
+      "changelogFile": "docs/CHANGELOG.md",
+    }],
+    ["@semantic-release/git", {
+      "assets": ["docs/CHANGELOG.md"],
+    }],
   ],
 };
