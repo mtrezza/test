@@ -4,7 +4,15 @@ module.exports = {
   'debug': true,
   'ci': false,
   'plugins': [
-    '@semantic-release/commit-analyzer',
+    ['@semantic-release/commit-analyzer', {
+      "preset": "angular",
+      "releaseRules": [
+        { "type": "docs", "scope": "README", "release": "patch" },
+        { "type": "refactor", "scope": "core-*", "release": "minor" },
+        { "type": "refactor", "release": "patch" },
+        { "scope": "no-release", "release": false }
+      ]
+    }],
     '@semantic-release/release-notes-generator',
     ['@semantic-release/npm', {
       'npmPublish': false,
