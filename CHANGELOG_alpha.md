@@ -1,3 +1,10 @@
+# [2.0.0-alpha.15](https://github.com/mtrezza/test/compare/2.0.0-alpha.14...2.0.0-alpha.15) (2021-08-25)
+
+
+### Features
+
+* new ([5221abf](https://github.com/mtrezza/test/commit/5221abf1d83bb0f1bf41956bfe968432cbc4ca5a))
+
 # [2.0.0-alpha.14](https://github.com/mtrezza/test/compare/2.0.0-alpha.13...2.0.0-alpha.14) (2021-08-25)
 
 
