@@ -1,3 +1,10 @@
+# [2.0.0-alpha.4](https://github.com/mtrezza/test/compare/v2.0.0-alpha.3...v2.0.0-alpha.4) (2021-08-25)
+
+
+### Bug Fixes
+
+* fix ([56d60dd](https://github.com/mtrezza/test/commit/56d60ddef2ec7c7c39ed6172d511fc08a8fd02c5))
+
 # [2.0.0-alpha.3](https://github.com/mtrezza/test/compare/v2.0.0-alpha.2...v2.0.0-alpha.3) (2021-08-25)
 
 
