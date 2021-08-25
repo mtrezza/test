@@ -1,3 +1,10 @@
+# [1.1.0-alpha.3](https://github.com/mtrezza/test/compare/v1.1.0-alpha.2...v1.1.0-alpha.3) (2021-08-25)
+
+
+### Bug Fixes
+
+* 01234 ([a37b852](https://github.com/mtrezza/test/commit/a37b85274fdd1c4c1bf779510afb3268c7c9259e))
+
 # [1.1.0-alpha.2](https://github.com/mtrezza/test/compare/v1.1.0-alpha.1...v1.1.0-alpha.2) (2021-08-25)
 
 
