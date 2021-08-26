@@ -1,3 +1,10 @@
+# [2.0.0-alpha.31](https://github.com/mtrezza/test/compare/2.0.0-alpha.30...2.0.0-alpha.31) (2021-08-26)
+
+
+### Bug Fixes
+
+* moved changelogs ([17decd9](https://github.com/mtrezza/test/commit/17decd97a09e8172aa7d5612f8e4fba366e4d6bf))
+
 # [2.0.0-alpha.30](https://github.com/mtrezza/test/compare/2.0.0-alpha.29...2.0.0-alpha.30) (2021-08-25)
 
 
