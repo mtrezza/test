@@ -1,3 +1,10 @@
+# [2.0.0-alpha.32](https://github.com/mtrezza/test/compare/2.0.0-alpha.31...2.0.0-alpha.32) (2021-08-26)
+
+
+### Bug Fixes
+
+* incorrect comment url ([787c936](https://github.com/mtrezza/test/commit/787c9361f03b7dc23d38e6b5c2f433d37f0ca7af))* incorrect comment url ([12d4fcd](https://github.com/mtrezza/test/commit/12d4fcd72dd0c010962eb546e18c18dd30082ddb))
+
 # [2.0.0-alpha.31](https://github.com/mtrezza/test/compare/2.0.0-alpha.30...2.0.0-alpha.31) (2021-08-26)
 
 
