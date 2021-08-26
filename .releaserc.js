@@ -25,16 +25,11 @@ async function config() {
   console.log(`Running on branch: ${branch}`);
   
   // Set changelog file
-  const changelogFile = `CHANGELOG_${branch}.md`;
+  const changelogFile = `./changelogs/CHANGELOG_${branch}.md`;
   console.log(`Changelog file output to: ${changelogFile}`);
 
   // Load template file contents
   await loadTemplates();
-
-  // const gitRawCommitsOpts = {
-  //   format: '%B%n-hash-%n%H%n-gitTags-%n%d%n-committerDate-%n%ci%n-authorName-%n%an%n-authorEmail-%n%ae%n-gpgStatus-%n%G?%n-gpgSigner-%n%GS',
-  // };
-
 
   const config = {
     branches: [
@@ -115,6 +110,5 @@ function getReleaseComment() {
   comment += '\n\n- ▶️ Test it out and please report back if you discover any bugs!';
   return comment;
 }
-
 
 module.exports = config();
