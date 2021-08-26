@@ -1,3 +1,11 @@
+# [2.0.0-alpha.33](https://github.com/mtrezza/test/compare/2.0.0-alpha.32...2.0.0-alpha.33) (2021-08-26)
+
+
+### Bug Fixes
+
+* 2 ([4dfa456](https://github.com/mtrezza/test/commit/4dfa456544851f04c3debee9aa5f0090cb8e028f))
+* newline ([ea70afc](https://github.com/mtrezza/test/commit/ea70afc6ea5691804404eed997a79f81a85d7ae8))
+
 # [2.0.0-alpha.32](https://github.com/mtrezza/test/compare/2.0.0-alpha.31...2.0.0-alpha.32) (2021-08-26)
 
 
