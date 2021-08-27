@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Inspect Issue
-      uses: mtrezza/parse-issue-bot@develop
+      uses: mtrezza/parse-issue-bot@alpha
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
