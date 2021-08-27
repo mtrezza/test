@@ -1,3 +1,10 @@
+# [2.0.0-beta.4](https://github.com/mtrezza/test/compare/2.0.0-beta.3...2.0.0-beta.4) (2021-08-27)
+
+
+### Bug Fixes
+
+* fix ([413ff23](https://github.com/mtrezza/test/commit/413ff2312f4f8f69088eb6f247e9dce9de8b5bda))
+
 # [2.0.0-beta.3](https://github.com/mtrezza/test/compare/2.0.0-beta.2...2.0.0-beta.3) (2021-08-26)
 
 
