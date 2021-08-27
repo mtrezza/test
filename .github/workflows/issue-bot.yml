@@ -1,5 +1,5 @@
 name: Issue Bot
-on: [issue_comment]
+on: [issues, pull_request]
 jobs:
   issue-bot:
     runs-on: ubuntu-latest
