@@ -1,7 +1,7 @@
 name: Test
 on:
   push:
-    branches: [ main, 'release-*.*.*' ]
+    #branches: [ main, 'release-*.*.*' ]
     tags: [ '*.*.*' ]
 jobs:
   test:
@@ -9,7 +9,5 @@ jobs:
     steps:
     - name: Determine branch name
       id: branch
-      #run: echo ${GITHUB_REF#refs/*/}
       run: echo "::set-output name=branch_name::${GITHUB_REF#refs/*/}"
-    - run: echo "${{ github.head_ref }}"
     - run: echo "${{ steps.branch.outputs.branch_name }}"
