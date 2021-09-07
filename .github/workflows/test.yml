@@ -10,7 +10,7 @@ jobs:
     - name: Determine branch name
       id: branch
       run: echo ${GITHUB_REF#refs/*/}
-      run: echo ${{ steps.branch.branch_name }}
-      run: ${{ github.head_ref }}
-      run: echo "::set-output name=branch_name::strawberry"
-      run: echo ${{ steps.branch.branch_name }}
+    - run: echo ${{ steps.branch.branch_name }}
+    - run: ${{ github.head_ref }}
+    - run: echo "::set-output name=branch_name::strawberry"
+    - run: echo ${{ steps.branch.branch_name }}
