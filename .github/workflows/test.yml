@@ -1,0 +1,14 @@
+name: Test
+on:
+  push:
+    branches: [ main, 'release-*.*.*' ]
+    tags: [ '*.*.*' ]
+jobs:
+  issue-bot:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Determine branch name
+      id: branch
+      run: echo ::set-output name=branch_name::${GITHUB_REF#refs/*/}
+    - name: Print branch name
+      run: echo ${{ steps.branch.branch_name }}
