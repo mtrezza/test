@@ -1,3 +1,17 @@
+# [2.0.0-alpha.36](https://github.com/mtrezza/test/compare/2.0.0-alpha.35...2.0.0-alpha.36) (2021-09-23)
+
+
+### Features
+
+* breaking 2 ([#51](https://github.com/mtrezza/test/issues/51)) ([f370394](https://github.com/mtrezza/test/commit/f37039428362dbfb831524dfbd0ed887bde971a6))
+
+
+### BREAKING CHANGES
+
+* An option has been removed. And this contains `code markdown` and other stuff. Just don't go onto the next line.
+
+This is on the next line.
+
 # [2.0.0-alpha.35](https://github.com/mtrezza/test/compare/2.0.0-alpha.34...2.0.0-alpha.35) (2021-09-23)
 
 
