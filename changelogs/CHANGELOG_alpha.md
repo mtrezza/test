@@ -1,3 +1,15 @@
+# [2.0.0-alpha.37](https://github.com/mtrezza/test/compare/2.0.0-alpha.36...2.0.0-alpha.37) (2021-09-23)
+
+
+### Features
+
+* another test ([bf12aa7](https://github.com/mtrezza/test/commit/bf12aa75e388531d320a531ccd0fa4a9ff0fd618))
+
+
+### BREAKING CHANGES
+
+* this is breaking!; ; bf12aa7;;issues; ; ; [object Object]
+
 # [2.0.0-alpha.36](https://github.com/mtrezza/test/compare/2.0.0-alpha.35...2.0.0-alpha.36) (2021-09-23)
 
 
