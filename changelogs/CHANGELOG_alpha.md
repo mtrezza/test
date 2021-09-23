@@ -1,3 +1,23 @@
+# [2.0.0-alpha.35](https://github.com/mtrezza/test/compare/2.0.0-alpha.34...2.0.0-alpha.35) (2021-09-23)
+
+
+### Features
+
+* this is breaking ([#50](https://github.com/mtrezza/test/issues/50)) ([81ef3a3](https://github.com/mtrezza/test/commit/81ef3a34db31351183ba7722a8fdeee61eda904a))
+
+
+### BREAKING CHANGES
+
+* CHANGE
+
+This is a description for a breaking change with more details, and some `code markdown`...
+
+And an empty line above and below.
+
+# And a headline
+
+And more text.
+
 # [2.0.0-alpha.34](https://github.com/mtrezza/test/compare/2.0.0-alpha.33...2.0.0-alpha.34) (2021-08-27)
 
 
