@@ -19,6 +19,7 @@ jobs:
   docker:
     runs-on: ubuntu-18.04
     steps:
+      - uses: actions/checkout@v2
       - name: Determine tag on HEAD
         id: tag
         run: echo "::set-output name=current_tag::$(git tag --points-at HEAD)"
