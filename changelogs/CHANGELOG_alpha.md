@@ -1,3 +1,10 @@
+# [2.0.0-alpha.40](https://github.com/mtrezza/test/compare/2.0.0-alpha.39...2.0.0-alpha.40) (2021-09-29)
+
+
+### Bug Fixes
+
+* ci ([05f35b4](https://github.com/mtrezza/test/commit/05f35b47d1aafe9d8385bff2e1dcd8b49c35bbb4))
+
 # [2.0.0-alpha.39](https://github.com/mtrezza/test/compare/2.0.0-alpha.38...2.0.0-alpha.39) (2021-09-29)
 
 
