@@ -22,6 +22,7 @@ jobs:
       run: echo ${{ steps.tag.outputs.current_tag }}
 
   docker:
+    needs: release
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
