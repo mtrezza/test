@@ -15,3 +15,12 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  docker:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Determine tag on HEAD
+        id: tag
+        run: echo "::set-output name=current_tag::$(git tag --points-at HEAD)"
+      - name: Test output
+        run: echo ${{ steps.tag.outputs.current_tag }}
