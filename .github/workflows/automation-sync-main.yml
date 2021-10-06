@@ -1,0 +1,15 @@
+on:
+  push:
+    branches:
+      - "main"
+jobs:
+  synchronize-main-with-alpha:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: "alpha"
+          fetch-depth: 0
+      - uses: pr-mpt/actions-merge-branch@v0
+        with:
+          from: "origin/main"
