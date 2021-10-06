@@ -10,6 +10,6 @@ jobs:
         with:
           ref: "alpha"
           fetch-depth: 0
-      - uses: pr-mpt/actions-merge-branch@v0
+      - uses: pr-mpt/actions-merge-branch@v2
         with:
           from: "origin/main"
