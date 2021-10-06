@@ -5,6 +5,8 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    outputs:
+      current_tag: ${{ steps.tag.outputs.current_tag }}
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
@@ -15,3 +17,17 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    - name: Determine tag on current commit
+      id: tag
+      run: echo "::set-output name=current_tag::$(git describe --tags --abbrev=0 --exact-match || echo '')"
+    - name: Test output
+      run: echo ${{ steps.tag.outputs.current_tag }}
+
+  docker:
+    needs: release
+    if: needs.release.outputs.current_tag != ''
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Tag of previous job
+        run: echo ${{ needs.release.outputs.current_tag }}
