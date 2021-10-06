@@ -1,3 +1,10 @@
+# [3.0.0-alpha.3](https://github.com/mtrezza/test/compare/3.0.0-alpha.2...3.0.0-alpha.3) (2021-10-06)
+
+
+### Bug Fixes
+
+* test ([#55](https://github.com/mtrezza/test/issues/55)) ([6570516](https://github.com/mtrezza/test/commit/657051648fbbe5d1311d2f2ad31981ee61b638e9))
+
 # [3.0.0-alpha.2](https://github.com/mtrezza/test/compare/3.0.0-alpha.1...3.0.0-alpha.2) (2021-10-06)
 
 
