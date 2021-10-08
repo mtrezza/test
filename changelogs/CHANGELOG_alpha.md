@@ -1,3 +1,15 @@
+# [3.0.0-alpha.7](https://github.com/mtrezza/test/compare/3.0.0-alpha.6...3.0.0-alpha.7) (2021-10-08)
+
+
+### Bug Fixes
+
+* 100 ([758244a](https://github.com/mtrezza/test/commit/758244a6eb2d7595734b1ddaa0b6813aad063120))
+* 200 ([ec6b6ad](https://github.com/mtrezza/test/commit/ec6b6ad30201b417d23c6978607bf37dfdba0b66))
+
+### Features
+
+* 100-200 ([a468c02](https://github.com/mtrezza/test/commit/a468c02424d337adaf5f78d056898bc63d8d9f93))
+
 # [3.0.0-alpha.6](https://github.com/mtrezza/test/compare/3.0.0-alpha.5...3.0.0-alpha.6) (2021-10-08)
 
 
