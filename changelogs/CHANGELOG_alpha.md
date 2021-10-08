@@ -1,3 +1,10 @@
+# [3.0.0-alpha.5](https://github.com/mtrezza/test/compare/3.0.0-alpha.4...3.0.0-alpha.5) (2021-10-08)
+
+
+### Features
+
+* 1-2 ([#61](https://github.com/mtrezza/test/issues/61)) ([8715fba](https://github.com/mtrezza/test/commit/8715fba2bbdac617fd4bb2434acded21fa77e9dc))
+
 # [3.0.0-alpha.4](https://github.com/mtrezza/test/compare/3.0.0-alpha.3...3.0.0-alpha.4) (2021-10-08)
 
 
