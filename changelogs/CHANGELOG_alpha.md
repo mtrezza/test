@@ -1,3 +1,22 @@
+# [3.0.0-alpha.8](https://github.com/mtrezza/test/compare/3.0.0-alpha.7...3.0.0-alpha.8) (2021-10-08)
+
+
+### Build System
+
+* merge alpha ([#52](https://github.com/mtrezza/test/issues/52)) ([02493f9](https://github.com/mtrezza/test/commit/02493f9414b8e2434c6d5afd912b30e208754528)), closes [#50](https://github.com/mtrezza/test/issues/50) [#51](https://github.com/mtrezza/test/issues/51)
+* merge alpha ([#54](https://github.com/mtrezza/test/issues/54)) ([67ec136](https://github.com/mtrezza/test/commit/67ec136b623cc884813a9e2ed0133d471151c179)), closes [#50](https://github.com/mtrezza/test/issues/50) [#51](https://github.com/mtrezza/test/issues/51)
+
+### chore
+
+* **release:** 3.0.0-beta.1 [skip ci] ([b6ca8da](https://github.com/mtrezza/test/commit/b6ca8da432a55c496e12c20211e6dd99f9bb7d91)), closes [#50](https://github.com/mtrezza/test/issues/50) [#51](https://github.com/mtrezza/test/issues/51)
+
+
+### BREAKING CHANGES
+
+* 2 ([#51](https://github.com/mtrezza/test/issues/51)) ([f370394](https://github.com/mtrezza/test/commit/f37039428362dbfb831524dfbd0ed887bde971a6)) ([67ec136](67ec136)); 
+* 2 ([#51](https://github.com/mtrezza/test/issues/51)) ([f370394](https://github.com/mtrezza/test/commit/f37039428362dbfb831524dfbd0ed887bde971a6)) ([02493f9](02493f9)); 
+* **release:** 2 ([#51](https://github.com/mtrezza/test/issues/51)) ([f370394](https://github.com/mtrezza/test/commit/f37039428362dbfb831524dfbd0ed887bde971a6)) ([b6ca8da](b6ca8da));
+
 # [3.0.0-alpha.7](https://github.com/mtrezza/test/compare/3.0.0-alpha.6...3.0.0-alpha.7) (2021-10-08)
 
 
