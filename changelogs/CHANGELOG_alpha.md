@@ -1,3 +1,10 @@
+# [3.0.0-alpha.6](https://github.com/mtrezza/test/compare/3.0.0-alpha.5...3.0.0-alpha.6) (2021-10-08)
+
+
+### Features
+
+* 10-20 ([#62](https://github.com/mtrezza/test/issues/62)) ([624ba41](https://github.com/mtrezza/test/commit/624ba41b56a160f1741f549a60be220aeb9d7ef2))
+
 # [3.0.0-alpha.5](https://github.com/mtrezza/test/compare/3.0.0-alpha.4...3.0.0-alpha.5) (2021-10-08)
 
 
