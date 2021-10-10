@@ -1,3 +1,15 @@
+# [3.0.0-alpha.10](https://github.com/mtrezza/test/compare/3.0.0-alpha.9...3.0.0-alpha.10) (2021-10-10)
+
+
+### Features
+
+* **myscope:** break2 ([3e1a29d](https://github.com/mtrezza/test/commit/3e1a29dccd7326de16eb83904a27503f3b991a3e))
+
+
+### BREAKING CHANGES
+
+* **myscope:** This is a breaking change! ([3e1a29d](3e1a29d));
+
 # [3.0.0-alpha.9](https://github.com/mtrezza/test/compare/3.0.0-alpha.8...3.0.0-alpha.9) (2021-10-10)
 
 
