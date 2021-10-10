@@ -1,3 +1,16 @@
+# [3.0.0-alpha.9](https://github.com/mtrezza/test/compare/3.0.0-alpha.8...3.0.0-alpha.9) (2021-10-10)
+
+
+### Features
+
+* Update change.txt ([#68](https://github.com/mtrezza/test/issues/68)) ([c4fb7b3](https://github.com/mtrezza/test/commit/c4fb7b36b0826f3e6661564148a851269b7411f2))
+
+
+### BREAKING CHANGES
+
+* CHANGE
+This is a breaking change ([c4fb7b3](c4fb7b3));
+
 # [3.0.0-alpha.8](https://github.com/mtrezza/test/compare/3.0.0-alpha.7...3.0.0-alpha.8) (2021-10-08)
 
 
