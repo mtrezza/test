@@ -11,11 +11,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      #- name: Run Git CCommands
-      #  run: |
-      #    git checkout -b alpha
-      #    git commit -am 'add som stuff'
-      #    git push origin
+      - name: Create branch
+        run: |
+          git checkout -b build-release-beta-${{ github.run_id }}-${{ github.run_number }}
+          git push origin
       - name: Create PR
         uses: k3rnels-actions/pr-update@v1
         with:
