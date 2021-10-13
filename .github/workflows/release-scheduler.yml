@@ -14,18 +14,16 @@ jobs:
       - name: Compose branch name for PR
         id: branch
         run: echo "::set-output name=name::build-release-beta-${{ github.run_id }}-${{ github.run_number }}"
-      - name: Test output
-        run: echo ${{ steps.branch.outputs.name }}
       - name: Create branch
         run: |
-          git checkout -b build-release-beta-${{ github.run_id }}-${{ github.run_number }}
-          git push --set-upstream origin build-release-beta-${{ github.run_id }}-${{ github.run_number }}
+          git checkout -b ${{ steps.branch.outputs.name }}
+          git push --set-upstream origin ${{ steps.branch.outputs.name }}
       - name: Create PR
         uses: k3rnels-actions/pr-update@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           pr_title: "build: release beta"
-          pr_source: alpha
+          pr_source: ${{ steps.branch.outputs.name }}
           pr_target: beta
           pr_labels: type:ci
           pr_body: |
