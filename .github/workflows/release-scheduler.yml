@@ -21,7 +21,7 @@ jobs:
           git config --global user.email ${{ github.actor }}@users.noreply.github.com
           git config --global user.name ${{ github.actor }}
           git checkout -b ${{ steps.branch.outputs.name }}
-          git commit -am 'ci: release commit'
+          git commit -am 'ci: release commit' --allow-empty
           git push --set-upstream origin ${{ steps.branch.outputs.name }}
       - name: Create PR
         uses: k3rnels-actions/pr-update@v1
@@ -54,7 +54,7 @@ jobs:
           git config --global user.email ${{ github.actor }}@users.noreply.github.com
           git config --global user.name ${{ github.actor }}
           git checkout -b ${{ steps.branch.outputs.name }}
-          git commit -am 'ci: release commit'
+          git commit -am 'ci: release commit' --allow-empty
           git push --set-upstream origin ${{ steps.branch.outputs.name }}
       - name: Create PR
         uses: k3rnels-actions/pr-update@v1
