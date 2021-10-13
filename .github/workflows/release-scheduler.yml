@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  create-pr:
+  create-pr-release:
     name: Create release pull request
     runs-on: ubuntu-latest
     steps:
@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Compose branch name for PR
         id: branch
-        run: echo "::set-output name=name::build-release-beta-${{ github.run_id }}-${{ github.run_number }}"
+        run: echo "::set-output name=name::build-release-${{ github.run_id }}${{ github.run_number }}"
       - name: Create branch
         run: |
           git checkout -b ${{ steps.branch.outputs.name }}
@@ -27,4 +27,36 @@ jobs:
           pr_target: beta
           pr_labels: type:ci
           pr_body: |
-            ### Release beta
+            # Release
+            This pull request was created, because a new release is due according to the release cycle of this repository.
+            Just resolve any conflicts and it's good to merge. Any version increment will be done by release automation.
+            ### ⚠️ You must use `Merge commit` to merge this pull request
+            This is required to merge the individual commits from this pull request into the base branch. Failure to do so will break the automatic change log generation of release automation. Do not use "Squash and merge"!
+  create-pr-beta:
+    name: Create release pull request
+    runs-on: ubuntu-latest
+    needs: create-pr-release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Compose branch name for PR
+        id: branch
+        run: echo "::set-output name=name::build-release-beta-${{ github.run_id }}${{ github.run_number }}"
+      - name: Create branch
+        run: |
+          git checkout -b ${{ steps.branch.outputs.name }}
+          git push --set-upstream origin ${{ steps.branch.outputs.name }}
+      - name: Create PR
+        uses: k3rnels-actions/pr-update@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: "build: release beta"
+          pr_source: ${{ steps.branch.outputs.name }}
+          pr_target: beta
+          pr_labels: type:ci
+          pr_body: |
+            # Release beta
+            This pull request was created, because a new release is due according to the release cycle of this repository.
+            Just resolve any conflicts and it's good to merge. Any version increment will be done by release automation.
+            ### ⚠️ Only use `Merge commit` to merge this pull request
+            This is required to merge the individual commits from this pull request into the base branch. Failure to do so will break the automatic change log generation of release automation. Do not use "Squash and merge"!
