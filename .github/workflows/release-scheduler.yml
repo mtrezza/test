@@ -18,7 +18,7 @@ jobs:
         run: echo "::set-output name=name::build-release-${{ github.run_id }}${{ github.run_number }}"
       - name: Create branch
         run: |
-          git config --global user.email ${github.actor}@users.noreply.github.com
+          git config --global user.email ${{ github.actor }}@users.noreply.github.com
           git config --global user.name ${{ github.actor }}
           git checkout -b ${{ steps.branch.outputs.name }}
           git commit -am 'ci: release commit'
@@ -51,7 +51,7 @@ jobs:
         run: echo "::set-output name=name::build-release-beta-${{ github.run_id }}${{ github.run_number }}"
       - name: Create branch
         run: |
-          git config --global user.email ${github.actor}@users.noreply.github.com
+          git config --global user.email ${{ github.actor }}@users.noreply.github.com
           git config --global user.name ${{ github.actor }}
           git checkout -b ${{ steps.branch.outputs.name }}
           git commit -am 'ci: release commit'
