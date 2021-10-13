@@ -9,13 +9,20 @@ jobs:
     name: Create release pull request
     runs-on: ubuntu-latest
     steps:
-      - name: Update npm packages
-        uses: technote-space/create-pr-action@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+      #- name: Run Git CCommands
+      #  run: |
+      #    git checkout -b alpha
+      #    git commit -am 'add som stuff'
+      #    git push origin
+      - name: Create PR
+        uses: k3rnels-actions/pr-update@v1
         with:
-          #EXECUTE_COMMANDS: |
-          #  git checkout -b 
-          COMMIT_MESSAGE: 'build: release beta'
-          COMMIT_NAME: 'mtrezza'
-          PR_BRANCH_NAME: 'build-release-beta-${PR_ID}'
-          PR_TITLE: 'build: release beta'
-          #GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: "build: release beta"
+          pr_source: alpha
+          pr_target: beta
+          pr_labels: type:ci
+          pr_body: |
+            ### Release beta
