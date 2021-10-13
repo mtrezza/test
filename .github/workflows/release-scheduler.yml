@@ -19,6 +19,7 @@ jobs:
       - name: Create branch
         run: |
           git checkout -b ${{ steps.branch.outputs.name }}
+          git commit -am 'ci: release commit'
           git push --set-upstream origin ${{ steps.branch.outputs.name }}
       - name: Create PR
         uses: k3rnels-actions/pr-update@v1
@@ -49,6 +50,7 @@ jobs:
       - name: Create branch
         run: |
           git checkout -b ${{ steps.branch.outputs.name }}
+          git commit -am 'ci: release commit'
           git push --set-upstream origin ${{ steps.branch.outputs.name }}
       - name: Create PR
         uses: k3rnels-actions/pr-update@v1
