@@ -1,0 +1,21 @@
+name: release-automated-scheduler
+on:
+  schedule:
+    - cron: 0 0 1 * *
+  workflow_dispatch:
+
+jobs:
+  create-pr:
+    name: Create release pull request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update npm packages
+        uses: technote-space/create-pr-action@v2
+        with:
+          #EXECUTE_COMMANDS: |
+          #  git checkout -b 
+          COMMIT_MESSAGE: 'build: release beta'
+          COMMIT_NAME: 'mtrezza'
+          PR_BRANCH_NAME: 'build-release-beta-${PR_ID}'
+          PR_TITLE: 'build: release beta'
+          #GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
