@@ -14,7 +14,8 @@ jobs:
       - name: Create branch
         run: |
           git checkout -b build-release-beta-${{ github.run_id }}-${{ github.run_number }}
-          git push origin
+          #git push origin
+          git push --set-upstream origin build-release-beta-1337185416-4
       - name: Create PR
         uses: k3rnels-actions/pr-update@v1
         with:
