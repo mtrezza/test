@@ -15,6 +15,6 @@ jobs:
         run: echo ${{ steps.check.outputs.exit_code }}
   follow:
     if: failure()
-    #needs: test
+    needs: test
     - name: exit code
         run: echo ${{ needs.release.outputs.exit_code }}
