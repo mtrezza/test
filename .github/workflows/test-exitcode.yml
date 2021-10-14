@@ -4,7 +4,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     outputs:
-      current_tag: ${{ steps.check.outputs.exit_code }}
+      exit_code: ${{ steps.check.outputs.exit_code }}
     steps:
       - name: exit with error
         id: check
@@ -19,4 +19,4 @@ jobs:
     if: failure()
     steps:
       - name: exit code
-        run: echo ${{ needs.release.outputs.exit_code }}
+        run: echo ${{ needs.test.outputs.exit_code }}
