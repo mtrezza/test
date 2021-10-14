@@ -14,6 +14,7 @@ jobs:
       - name: exit code
         run: echo ${{ steps.check.outputs.exit_code }}
   follow:
+    runs-on: ubuntu-latest
     needs: test
     if: failure()
     steps:
