@@ -1,0 +1,15 @@
+on:
+  push:
+    branches: [ main, 'release-*.*.*' ]
+    tags: [ '*.*.*' ]
+jobs:
+  exit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: exit with error
+        id: check
+        run: |
+          exit 1
+          echo ::set-output name=exit_code::$?
+      - name: exit code
+        run: echo ${{ steps.check.outputs.exit_code }}
