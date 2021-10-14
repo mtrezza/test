@@ -14,8 +14,7 @@ jobs:
       - name: exit code
         run: echo ${{ steps.check.outputs.exit_code }}
   follow:
-    if: ${{ failure() }}
-    #needs: test
-    #if: needs.release.outputs.current_tag != ''
+    needs: test
+    if: needs.test.result == 'failure'
     - name: exit code
         run: echo ${{ needs.release.outputs.exit_code }}
