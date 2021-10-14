@@ -9,7 +9,7 @@ jobs:
       - name: exit with error
         id: check
         run: |
-          exit 0
+          exit 1
           echo ::set-output name=exit_code::$?
       - name: exit code
         run: echo ${{ steps.check.outputs.exit_code }}
@@ -20,3 +20,5 @@ jobs:
     steps:
       - name: exit code
         run: echo ${{ needs.test.outputs.exit_code }}
+      - name: url
+        run: echo ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
