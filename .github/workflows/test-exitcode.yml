@@ -1,8 +1,10 @@
 on:
   workflow_dispatch:
 jobs:
-  exit:
+  test:
     runs-on: ubuntu-latest
+    outputs:
+      current_tag: ${{ steps.check.outputs.exit_code }}
     steps:
       - name: exit with error
         id: check
@@ -11,3 +13,8 @@ jobs:
           echo ::set-output name=exit_code::$?
       - name: exit code
         run: echo ${{ steps.check.outputs.exit_code }}
+  follow:
+    needs: test
+    #if: needs.release.outputs.current_tag != ''
+    - name: exit code
+        run: echo ${{ needs.release.outputs.exit_code }}
