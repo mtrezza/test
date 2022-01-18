@@ -1,3 +1,10 @@
+# [3.0.0-alpha.15](https://github.com/mtrezza/test/compare/3.0.0-alpha.14...3.0.0-alpha.15) (2022-01-18)
+
+
+### Bug Fixes
+
+* revm2 ([#75](https://github.com/mtrezza/test/issues/75)) ([e4cf854](https://github.com/mtrezza/test/commit/e4cf85403beb20f2de7de51e873756ad9a5b8f15))
+
 # [3.0.0-alpha.14](https://github.com/mtrezza/test/compare/3.0.0-alpha.13...3.0.0-alpha.14) (2022-01-18)
 
 
