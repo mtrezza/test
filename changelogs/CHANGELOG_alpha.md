@@ -1,3 +1,10 @@
+# [3.0.0-alpha.12](https://github.com/mtrezza/test/compare/3.0.0-alpha.11...3.0.0-alpha.12) (2022-01-18)
+
+
+### Bug Fixes
+
+* test ([608eecf](https://github.com/mtrezza/test/commit/608eecf8408332b6ac427a478a63abd324011902))
+
 # [3.0.0-alpha.11](https://github.com/mtrezza/test/compare/3.0.0-alpha.10...3.0.0-alpha.11) (2022-01-18)
 
 
