@@ -90,6 +90,7 @@ async function config() {
       }],
       ["@semantic-release/github", {
         successComment: getReleaseComment(),
+        releasedLabels: ['state:released<%= nextRelease.channel ? `-\${nextRelease.channel}` : "" %>'],
       }],
     ],
   };
