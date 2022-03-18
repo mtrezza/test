@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-      persist-credentials: false
+        persist-credentials: false
     - uses: actions/setup-node@v2
       with:
         node-version: 14
