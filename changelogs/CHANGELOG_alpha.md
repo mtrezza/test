@@ -1,3 +1,10 @@
+# [3.0.0-alpha.16](https://github.com/mtrezza/test/compare/3.0.0-alpha.15...3.0.0-alpha.16) (2022-03-18)
+
+
+### Bug Fixes
+
+* it ([abadb64](https://github.com/mtrezza/test/commit/abadb6462d65df054501cc00a57226664d063fb4))
+
 # [3.0.0-alpha.15](https://github.com/mtrezza/test/compare/3.0.0-alpha.14...3.0.0-alpha.15) (2022-01-18)
 
 

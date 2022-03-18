@@ -1,3 +1,10 @@
+# [3.0.0-beta.5](https://github.com/mtrezza/test/compare/3.0.0-beta.4...3.0.0-beta.5) (2022-03-18)
+
+
+### Bug Fixes
+
+* it ([abadb64](https://github.com/mtrezza/test/commit/abadb6462d65df054501cc00a57226664d063fb4))
+
 # [3.0.0-beta.4](https://github.com/mtrezza/test/compare/3.0.0-beta.3...3.0.0-beta.4) (2022-03-18)
 
 
