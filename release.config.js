@@ -79,6 +79,23 @@ async function config() {
           footerPartial: templates.footer.text,
         },
       }],
+      [
+        "@saithodev/semantic-release-backmerge",
+        {
+          "branches": [
+            { from: "beta", to: "alpha" },
+            { from: "release", to: "beta" },
+          ],
+          "plugins": [
+            [
+              "@semantic-release/exec",
+              {
+                "successCmd": "echo 'Version in master is ${nextRelease.version}' > test.txt && git add test.txt"
+              }
+            ]
+          ]
+        }
+      ],
       ['@semantic-release/changelog', {
         'changelogFile': changelogFile,
       }],
