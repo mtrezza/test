@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/mtrezza/test/compare/4.0.0...4.0.1) (2022-03-18)
+
+
+### Bug Fixes
+
+* it ([abadb64](https://github.com/mtrezza/test/commit/abadb6462d65df054501cc00a57226664d063fb4))
+
 # [4.0.0](https://github.com/mtrezza/test/compare/3.0.0...4.0.0) (2022-03-18)
 
 
