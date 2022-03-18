@@ -85,14 +85,6 @@ async function config() {
           "branches": [
             { from: "beta", to: "alpha" },
             { from: "release", to: "beta" },
-          ],
-          "plugins": [
-            [
-              "@semantic-release/exec",
-              {
-                "successCmd": "echo 'Version in master is ${nextRelease.version}' > test.txt && git add test.txt"
-              }
-            ]
           ]
         }
       ],
