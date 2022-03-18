@@ -79,15 +79,6 @@ async function config() {
           footerPartial: templates.footer.text,
         },
       }],
-      [
-        "@saithodev/semantic-release-backmerge",
-        {
-          "branches": [
-            { from: "beta", to: "alpha" },
-            { from: "release", to: "beta" },
-          ]
-        }
-      ],
       ['@semantic-release/changelog', {
         'changelogFile': changelogFile,
       }],
@@ -97,6 +88,15 @@ async function config() {
       ['@semantic-release/git', {
         assets: [changelogFile, 'package.json', 'package-lock.json', 'npm-shrinkwrap.json'],
       }],
+      [
+        "@saithodev/semantic-release-backmerge",
+        {
+          "branches": [
+            { from: "beta", to: "alpha" },
+            { from: "release", to: "beta" },
+          ]
+        }
+      ],
       ["@semantic-release/github", {
         successComment: getReleaseComment(),
         releasedLabels: ['state:released<%= nextRelease.channel ? `-${nextRelease.channel}` : "" %>'],
