@@ -1,3 +1,10 @@
+# [4.1.0-beta.1](https://github.com/mtrezza/test/compare/4.0.1...4.1.0-beta.1) (2022-03-18)
+
+
+### Features
+
+* q ([dc8382f](https://github.com/mtrezza/test/commit/dc8382f08dfc07c9158647f6db84b629cb1c28cc))
+
 # [3.0.0-beta.5](https://github.com/mtrezza/test/compare/3.0.0-beta.4...3.0.0-beta.5) (2022-03-18)
 
 
