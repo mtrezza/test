@@ -1,3 +1,34 @@
+# [4.0.0](https://github.com/mtrezza/test/compare/3.0.0...4.0.0) (2022-03-18)
+
+
+### Bug Fixes
+
+* 100 ([758244a](https://github.com/mtrezza/test/commit/758244a6eb2d7595734b1ddaa0b6813aad063120))
+* 200 ([ec6b6ad](https://github.com/mtrezza/test/commit/ec6b6ad30201b417d23c6978607bf37dfdba0b66))
+* a ([8ff02e2](https://github.com/mtrezza/test/commit/8ff02e2eff87c0bf31db1fc660150a64dca3801d))
+* b ([dc34d05](https://github.com/mtrezza/test/commit/dc34d051255a757fb6de3817198b39ba344f4e67))
+* est ([#74](https://github.com/mtrezza/test/issues/74)) ([c33fac5](https://github.com/mtrezza/test/commit/c33fac55bb1601954f9b72dbbc532369ecec2ced))
+* revm2 ([#75](https://github.com/mtrezza/test/issues/75)) ([e4cf854](https://github.com/mtrezza/test/commit/e4cf85403beb20f2de7de51e873756ad9a5b8f15))
+* test ([608eecf](https://github.com/mtrezza/test/commit/608eecf8408332b6ac427a478a63abd324011902))
+* test ([4431bea](https://github.com/mtrezza/test/commit/4431bea4f16e67000fcea67c6f430f00fb7b4ae0))
+* test ([#55](https://github.com/mtrezza/test/issues/55)) ([6570516](https://github.com/mtrezza/test/commit/657051648fbbe5d1311d2f2ad31981ee61b638e9))
+* test ([#73](https://github.com/mtrezza/test/issues/73)) ([e3a36e0](https://github.com/mtrezza/test/commit/e3a36e080c590dd9441a22a382670a55ff9eed6d))
+
+### Features
+
+* 1-2 ([#61](https://github.com/mtrezza/test/issues/61)) ([8715fba](https://github.com/mtrezza/test/commit/8715fba2bbdac617fd4bb2434acded21fa77e9dc))
+* 10-20 ([#62](https://github.com/mtrezza/test/issues/62)) ([624ba41](https://github.com/mtrezza/test/commit/624ba41b56a160f1741f549a60be220aeb9d7ef2))
+* 100-200 ([a468c02](https://github.com/mtrezza/test/commit/a468c02424d337adaf5f78d056898bc63d8d9f93))
+* **myscope:** break2 ([3e1a29d](https://github.com/mtrezza/test/commit/3e1a29dccd7326de16eb83904a27503f3b991a3e))
+* Update change.txt ([#68](https://github.com/mtrezza/test/issues/68)) ([c4fb7b3](https://github.com/mtrezza/test/commit/c4fb7b36b0826f3e6661564148a851269b7411f2))
+
+
+### BREAKING CHANGES
+
+* **myscope:** This is a breaking change! ([3e1a29d](3e1a29d)); 
+* CHANGE
+This is a breaking change ([c4fb7b3](c4fb7b3));
+
 # [3.0.0](https://github.com/mtrezza/test/compare/2.2.0...3.0.0) (2021-10-06)
 
 
