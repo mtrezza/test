@@ -94,6 +94,7 @@ async function config() {
           "branches": [
             { from: "beta", to: "alpha" },
             { from: "release", to: "beta" },
+            { from: "release", to: "alpha" },
           ]
         }
       ],
