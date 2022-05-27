@@ -79,15 +79,6 @@ async function config() {
           footerPartial: templates.footer.text,
         },
       }],
-      ['@semantic-release/changelog', {
-        'changelogFile': changelogFile,
-      }],
-      ['@semantic-release/npm', {
-        'npmPublish': false,
-      }],
-      ['@semantic-release/git', {
-        assets: [changelogFile, 'package.json', 'package-lock.json', 'npm-shrinkwrap.json'],
-      }],
       [
         "@saithodev/semantic-release-backmerge",
         {
@@ -100,6 +91,15 @@ async function config() {
           // "mergeMode": "ours",
         }
       ],
+      ['@semantic-release/changelog', {
+        'changelogFile': changelogFile,
+      }],
+      ['@semantic-release/npm', {
+        'npmPublish': false,
+      }],
+      ['@semantic-release/git', {
+        assets: [changelogFile, 'package.json', 'package-lock.json', 'npm-shrinkwrap.json'],
+      }],
       ["@semantic-release/github", {
         successComment: getReleaseComment(),
         releasedLabels: ['state:released<%= nextRelease.channel ? `-${nextRelease.channel}` : "" %>'],
