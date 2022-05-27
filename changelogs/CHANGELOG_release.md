@@ -1,3 +1,10 @@
+## [5.1.4](https://github.com/mtrezza/test/compare/5.1.3...5.1.4) (2022-05-27)
+
+
+### Bug Fixes
+
+* 2 ([f94a828](https://github.com/mtrezza/test/commit/f94a8283d23b7ed95c526710d1847b8b674a662a))
+
 ## [5.1.3](https://github.com/mtrezza/test/compare/5.1.2...5.1.3) (2022-05-27)
 
 
