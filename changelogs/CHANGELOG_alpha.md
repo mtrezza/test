@@ -3,6 +3,21 @@
 
 ### Bug Fixes
 
+* 2 ([291f4cc](https://github.com/mtrezza/test/commit/291f4cccc4046d565f8dee43b9e57db4e9e3d48f))
+* 2 ([cc53a74](https://github.com/mtrezza/test/commit/cc53a74ae88ad851fb169f0d8e9204c1fd8d285d))
+* a ([ae621a1](https://github.com/mtrezza/test/commit/ae621a154f64ce5eeb51d637ee289be9a230af71))
+* branches ([095a44e](https://github.com/mtrezza/test/commit/095a44e2c33ebb0ed7a0e68356ddbe5a01fd1cda))
+* c ([7fd0ed7](https://github.com/mtrezza/test/commit/7fd0ed78eaea2ed8076100431f1be3866e5dca8c))
+* forcePush ([8b8afd2](https://github.com/mtrezza/test/commit/8b8afd2b0924f83738fc393259795585b08950a5))
+* merge ([e96ac11](https://github.com/mtrezza/test/commit/e96ac11b7f4bbc1d481d9571bb88d77492709a22))
+* rebase ([690dc45](https://github.com/mtrezza/test/commit/690dc459052cef074f9ebd10070250c0675e1ebe))
+* test ([d13c704](https://github.com/mtrezza/test/commit/d13c704d2cadb988a9a0ca988aa9c8ff5ba1db59))
+
+## [5.1.7-alpha.1](https://github.com/mtrezza/test/compare/5.1.6...5.1.7-alpha.1) (2022-05-27)
+
+
+### Bug Fixes
+
 * 2 ([cc53a74](https://github.com/mtrezza/test/commit/cc53a74ae88ad851fb169f0d8e9204c1fd8d285d))
 * a ([ae621a1](https://github.com/mtrezza/test/commit/ae621a154f64ce5eeb51d637ee289be9a230af71))
 * branches ([095a44e](https://github.com/mtrezza/test/commit/095a44e2c33ebb0ed7a0e68356ddbe5a01fd1cda))
