@@ -96,8 +96,8 @@ async function config() {
             { from: "release", to: "beta" },
             { from: "release", to: "alpha" },
           ],
-          "backmergeStrategy": "merge",
-          "mergeMode": "theirs",
+          // "backmergeStrategy": "merge",
+          // "mergeMode": "ours",
         }
       ],
       ["@semantic-release/github", {
