@@ -85,9 +85,6 @@ async function config() {
       ['@semantic-release/npm', {
         'npmPublish': false,
       }],
-      ['@semantic-release/git', {
-        assets: [changelogFile, 'package.json', 'package-lock.json', 'npm-shrinkwrap.json'],
-      }],
       [
         "@saithodev/semantic-release-backmerge",
         {
@@ -96,10 +93,13 @@ async function config() {
             { from: "release", to: "beta" },
             { from: "release", to: "alpha" },
           ],
-          "backmergeStrategy": "merge",
-          "mergeMode": "ours",
+          // "backmergeStrategy": "merge",
+          // "mergeMode": "ours",
         }
       ],
+      ['@semantic-release/git', {
+        assets: [changelogFile, 'package.json', 'package-lock.json', 'npm-shrinkwrap.json'],
+      }],
       ["@semantic-release/github", {
         successComment: getReleaseComment(),
         releasedLabels: ['state:released<%= nextRelease.channel ? `-${nextRelease.channel}` : "" %>'],
