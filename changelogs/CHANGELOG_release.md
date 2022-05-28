@@ -1,3 +1,10 @@
+## [5.1.8](https://github.com/mtrezza/test/compare/5.1.7...5.1.8) (2022-05-28)
+
+
+### Bug Fixes
+
+* ci ([cfd26db](https://github.com/mtrezza/test/commit/cfd26db286b1d139c65dbf496bccd56163027848))
+
 ## [5.1.7](https://github.com/mtrezza/test/compare/5.1.6...5.1.7) (2022-05-27)
 
 
