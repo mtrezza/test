@@ -6,17 +6,13 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Determine released package
-        id: package
-        #run: echo "::set-output name=name::${GITHUB_REF#refs/*/}"
-        run: echo ${{ github.ref_name }}
       - name: Checkout code
         uses: actions/checkout@v3
         with:
           ref: ${{ github.event.inputs.ref }}
       - name: Publish dart package
-        if: ${{ startsWith(steps.package.outputs.name, 'dart') }}
+        if: ${{ startsWith(github.ref_name, 'dart') }}
         run: echo "dart"
       - name: Publish flutter package
-        if: ${{ startsWith(steps.package.outputs.name, 'flutter') }}
+        if: ${{ startsWith(github.ref_name, 'flutter') }}
         run: echo "flutter"
