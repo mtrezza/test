@@ -96,7 +96,7 @@ async function config() {
           backmergeStrategy: "merge",
           clearWorkspace: true,
           mergeMode: "ours",
-          forcePush: true,
+          // forcePush: true,
         }
       ],
       ['@semantic-release/git', {
