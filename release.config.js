@@ -95,6 +95,7 @@ async function config() {
           ],
           // "backmergeStrategy": "merge",
           // "mergeMode": "ours",
+          forcePush: true,
         }
       ],
       ['@semantic-release/git', {
