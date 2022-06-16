@@ -1,3 +1,10 @@
+## [5.1.24-beta.1](https://github.com/mtrezza/test/compare/5.1.23...5.1.24-beta.1) (2022-06-16)
+
+
+### Bug Fixes
+
+* alpha.1 ([dafc982](https://github.com/mtrezza/test/commit/dafc9823022c583de232ecef215de496c49acc04))
+
 ## [5.1.23-beta.1](https://github.com/mtrezza/test/compare/5.1.22...5.1.23-beta.1) (2022-06-16)
 
 

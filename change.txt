@@ -1,6 +1,1 @@
 fix: alpha.1
-fix: alpha.2
-fix: alpha.3
-fix: d1
-fix: hot-release-1
-fix: e1

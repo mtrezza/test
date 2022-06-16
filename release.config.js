@@ -93,8 +93,8 @@ async function config() {
             { from: "release", to: "beta" },
             // { from: "release", to: "alpha" },
           ],
-          backmergeStrategy: "merge",
-          clearWorkspace: true,
+          // backmergeStrategy: "merge",
+          // clearWorkspace: true,
           // mergeMode: "ours",
           // forcePush: true,
         }
