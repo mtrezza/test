@@ -1,3 +1,10 @@
+## [5.1.15-alpha.2](https://github.com/mtrezza/test/compare/5.1.15-alpha.1...5.1.15-alpha.2) (2022-06-16)
+
+
+### Bug Fixes
+
+* a ([c103a43](https://github.com/mtrezza/test/commit/c103a43443cfac9046f40dd9d6e694f7473c35b1))
+
 ## [5.1.15-alpha.1](https://github.com/mtrezza/test/compare/5.1.14...5.1.15-alpha.1) (2022-06-16)
 
 
