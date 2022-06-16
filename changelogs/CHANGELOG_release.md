@@ -1,3 +1,10 @@
+## [5.1.22](https://github.com/mtrezza/test/compare/5.1.21...5.1.22) (2022-06-16)
+
+
+### Bug Fixes
+
+* hot-release-1 ([008b40d](https://github.com/mtrezza/test/commit/008b40dbefdd75573577758e15c2b89741710da8))
+
 ## [5.1.21](https://github.com/mtrezza/test/compare/5.1.20...5.1.21) (2022-06-16)
 
 
