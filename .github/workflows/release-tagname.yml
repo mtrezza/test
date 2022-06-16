@@ -1,0 +1,18 @@
+name: release-automated
+on:
+  release:
+    types: [published]
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.ref }}
+      - name: Publish dart package
+        if: ${{ startsWith(github.ref_name, 'dart') }}
+        run: echo "dart"
+      - name: Publish flutter package
+        if: ${{ startsWith(github.ref_name, 'flutter') }}
+        run: echo "flutter"
