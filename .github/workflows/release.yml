@@ -22,8 +22,17 @@ jobs:
     - name: Determine tag on current commit
       id: tag
       run: echo "::set-output name=current_tag::$(git describe --tags --abbrev=0 --exact-match || echo '')"
+    - name: Determine current branch
+      id: branch
+      run: echo "::set-output name=current_branch::$(git branch --show-current)"
     - name: Test output
       run: echo ${{ steps.tag.outputs.current_tag }}
+    # - name: backmerge
+    #   #if: steps.branch.outputs.current_branch == 'release'
+    #   run: |
+    #     git checkout release
+    #     git merge beta
+    #     git checkout 
 
   docker:
     needs: release

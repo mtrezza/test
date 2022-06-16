@@ -91,11 +91,11 @@ async function config() {
           "branches": [
             { from: "beta", to: "alpha" },
             { from: "release", to: "beta" },
-            { from: "release", to: "alpha" },
+            // { from: "release", to: "alpha" },
           ],
           backmergeStrategy: "merge",
           clearWorkspace: true,
-          mergeMode: "ours",
+          // mergeMode: "ours",
           // forcePush: true,
         }
       ],
@@ -106,6 +106,11 @@ async function config() {
         successComment: getReleaseComment(),
         releasedLabels: ['state:released<%= nextRelease.channel ? `-${nextRelease.channel}` : "" %>'],
       }],
+      // ["@semantic-release/exec", {
+      //   // "verifyConditionsCmd": "./verify.sh",
+      //   // "publishCmd": "./publish.sh ${nextRelease.version} ${options.branch} ${commits.length} ${Date.now()}",
+      //   // "successCmd": "git merge ",
+      // }],
     ],
   };
 
