@@ -1,3 +1,10 @@
+## [5.1.29-beta.1](https://github.com/mtrezza/test/compare/5.1.28...5.1.29-beta.1) (2022-06-17)
+
+
+### Bug Fixes
+
+* alpha.5 ([8c60fe2](https://github.com/mtrezza/test/commit/8c60fe262830c90234011364c142d9014f41dc9c))
+
 ## [5.1.28-beta.1](https://github.com/mtrezza/test/compare/5.1.27...5.1.28-beta.1) (2022-06-17)
 
 
