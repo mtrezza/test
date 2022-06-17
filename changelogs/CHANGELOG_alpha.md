@@ -1,3 +1,11 @@
+## [5.1.25-alpha.1](https://github.com/mtrezza/test/compare/5.1.24...5.1.25-alpha.1) (2022-06-16)
+
+
+### Bug Fixes
+
+* alpha.2 ([78e6370](https://github.com/mtrezza/test/commit/78e63703ab655b09417b2df243254cc3e8a45cb2))
+* alpha.3 ([b60966d](https://github.com/mtrezza/test/commit/b60966dae5dbd1bccf8702f91631ae4446dc4a9f))
+
 ## [5.1.24-alpha.2](https://github.com/mtrezza/test/compare/5.1.24-alpha.1...5.1.24-alpha.2) (2022-06-16)
 
 
