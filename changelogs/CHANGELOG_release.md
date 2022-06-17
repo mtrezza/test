@@ -1,3 +1,10 @@
+## [5.1.34](https://github.com/mtrezza/test/compare/5.1.33...5.1.34) (2022-06-17)
+
+
+### Bug Fixes
+
+* alpha.3 ([99b5549](https://github.com/mtrezza/test/commit/99b554961923f4f858ac84e5a1c005ee789bac8b))
+
 ## [5.1.33](https://github.com/mtrezza/test/compare/5.1.32...5.1.33) (2022-06-17)
 
 
