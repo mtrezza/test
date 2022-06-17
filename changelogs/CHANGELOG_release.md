@@ -1,3 +1,10 @@
+## [5.1.34](https://github.com/mtrezza/test/compare/5.1.33...5.1.34) (2022-06-17)
+
+
+### Bug Fixes
+
+* hotfix.2 ([13bc9f3](https://github.com/mtrezza/test/commit/13bc9f3bfa43f5ddbfd491ae9be7d8f130783b54))
+
 ## [5.1.33](https://github.com/mtrezza/test/compare/5.1.32...5.1.33) (2022-06-17)
 
 
