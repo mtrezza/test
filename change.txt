@@ -1,2 +1,3 @@
 fix: alpha.1
 fix: alpha.2
+fix: hotfix.1
