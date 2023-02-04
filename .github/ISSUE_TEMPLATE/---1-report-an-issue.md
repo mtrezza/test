@@ -1,13 +1,12 @@
 name: Bug Report
 description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-        - Report security issues [confidentially](https://github.com/parse-community/.github/SECURITY.md).
-        - Check whether this is an [existing issue](../issues?q=is%3Aissue).
-        - Contributors accept the [repository license](../LICENSE).
   - type: input
     id: contact
     attributes:
@@ -20,7 +19,7 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: Describe the issue.
+      description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
       value: "A bug happened!"
     validations:
@@ -29,7 +28,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: What version of Parse Server are you using?
+      description: What version of our software are you running?
       options:
         - 1.0.2 (Default)
         - 1.0.3 (Edge)
